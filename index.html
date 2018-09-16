@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home</title>
 	<link rel="icon" type="image/gif" href="img/a.jpg" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -18,13 +18,13 @@
 						<i class="fas fa-bars"></i>
 					</div>
 				</section>
-					<nav id="nav" class="">
-						<ul id="" class="">
-							<li id="" class=""><a href="#">home</a></li>
-							<li id="" class=""><a href="#">sign in</a></li>
-							<li id="" class=""><a href="#">sign up</a></li>
-						</ul>
-					</nav>
+				<nav id="nav" class="">
+					<ul id="" class="">
+						<li id="" class=""><a href="#" id="" class="">home</a></li>
+						<li id="" class=""><a href="#" id="signinli" class="">sign in</a></li>
+						<li id="" class=""><a href="#" id="signupli" class="">sign up</a></li>
+					</ul>
+				</nav>
 				<script src="js/hamburger-toggle.js"></script>
 			</div>
 		</header>
@@ -194,6 +194,77 @@
 				</div>
 			</div>
 		</footer>
+		<!-- sign in modal -->
+		<div id="signinModal" class="modal">
+			<div class="modal-content">
+				<section id="" class="col-lg-12 col-md-12 col-sm-12">
+					<span class="close">&times;</span>
+				</section>
+				<div id="" class="row-center">
+					<label id="" class="">signin</label>
+				</div>
+				<section id="" class="col-lg-12 col-md-12 col-sm-12">
+					<form method="POST" action="" class="form">
+						<div id="" class="col-lg-12 col-md-12 col-sm-12">
+							<input type="text" name="" id="" class="input" placeholder="Username">
+						</div>
+						<div id="" class="col-lg-12 col-md-12 col-sm-12">
+							<input type="password" name="" id="" class="input" placeholder="Password">
+						</div>
+						<div id="" class="col-lg-12 col-md-12 col-sm-12">
+							<input type="submit" name="" id="" class="btn" value="Sign In">
+						</div>
+					</form>
+				</section>
+			</div>
+		</div>
+		<script>
+			var signinModal = document.getElementById('signinModal');
+			var span0 = document.getElementsByClassName("close")[0];
+			signinli.onclick = function(){
+			   signinModal.style.display = "block";
+			}
+			span0.onclick = function(){
+			    signinModal.style.display = "none";
+			}
+		</script>
+		<!-- sign up modal -->
+		<div id="signupModal" class="modal">
+			<div class="modal-content">
+				<section id="" class="col-lg-12 col-md-12 col-sm-12">
+					<span class="close">&times;</span>
+				</section>
+				<div id="" class="row-center">
+					<label id="" class="">signup</label>
+				</div>
+				<section id="" class="col-lg-12 col-md-12 col-sm-12">
+					<form method="POST" action="" class="form">
+						<div id="" class="col-lg-12 col-md-12 col-sm-12">
+							<input type="text" name="" id="" class="input" placeholder="Username">
+						</div>
+						<div id="" class="col-lg-12 col-md-12 col-sm-12">
+							<input type="password" name="" id="" class="input" placeholder="Password">
+						</div>
+						<div id="" class="col-lg-12 col-md-12 col-sm-12">
+							<input type="password" name="" id="" class="input" placeholder="Confirm Password">
+						</div>
+						<div id="" class="col-lg-12 col-md-12 col-sm-12">
+							<input type="submit" name="" id="" class="btn" value="Sign Up">
+						</div>
+					</form>
+				</section>
+			</div>
+		</div>
+		<script>
+			var signupModal = document.getElementById('signupModal');
+			var span1 = document.getElementsByClassName("close")[1];
+			signupli.onclick = function(){
+			   signupModal.style.display = "block";
+			}
+			span1.onclick = function(){
+			    signupModal.style.display = "none";
+			}
+		</script>
 	</div>
 </body>
 </html>
